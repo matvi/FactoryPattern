@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "FactoryPattern\FactoryPattern.csproj", "{DAE4CD72-038D-490B-BA00-6D8581AF5418}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAE4CD72-038D-490B-BA00-6D8581AF5418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE4CD72-038D-490B-BA00-6D8581AF5418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE4CD72-038D-490B-BA00-6D8581AF5418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE4CD72-038D-490B-BA00-6D8581AF5418}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
