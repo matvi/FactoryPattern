@@ -1,19 +1,22 @@
-﻿using FactoryPattern.Interface;
+﻿using FactoryPattern.AbstractFactory;
+using FactoryPattern.Common.Enum;
+using FactoryPattern.Interface;
 
 namespace FactoryPattern.Services
 {
     public class BattleService : IBatterService
     {
-        private readonly IEnemyFactory _enemyFactory;
+        private readonly IAbstractEnemyFactory _abstractEnemyFactory;
 
-        public BattleService(IEnemyFactory enemyFactory)
+        public BattleService(IAbstractEnemyFactory abstractEnemyFactory)
         {
-            _enemyFactory = enemyFactory;
+            _abstractEnemyFactory = abstractEnemyFactory;
         }
         
-        public void StartAttack()
+        public void StartAttack(UserType userType)
         {
-            var enemy = _enemyFactory.CreateEnemy();
+            var enemyFactory = _abstractEnemyFactory.GetEnemyFactoryByUserType(userType);
+            var enemy = enemyFactory.CreateEnemy();
             enemy.Attack();
         }
     }

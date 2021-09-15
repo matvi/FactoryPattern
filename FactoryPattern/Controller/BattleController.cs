@@ -1,4 +1,5 @@
-﻿using FactoryPattern.Interface;
+﻿using FactoryPattern.Common.Enum;
+using FactoryPattern.Interface;
 
 namespace FactoryPattern.Controller
 {
@@ -11,9 +12,9 @@ namespace FactoryPattern.Controller
             _batterService = batterService;
         }
 
-        public void StartBattle()
+        public void StartBattle(UserType userType)
         {
-            _batterService.StartAttack();
+            _batterService.StartAttack(userType);
         }
     }
 }
